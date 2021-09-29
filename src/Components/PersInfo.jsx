@@ -7,6 +7,8 @@ const Photo = styled.img`
     width: 100%;
     max-width: 200px;
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 `
 
 const Email = styled.p`
