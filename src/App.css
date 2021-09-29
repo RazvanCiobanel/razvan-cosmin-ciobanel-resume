@@ -18,6 +18,7 @@
   color: #155171;
   padding: 1rem;
   height: auto;
+  width: 90vw; 
 }
 
 .text {
@@ -32,12 +33,10 @@
   font-size: 1.1rem;
   width: 100%;
 }
-.personal-info {
-   width: 80vw; 
-}
+
 
 .resume-obj {
-  width: 80vw;
+  width: 90vw;
 }
 
 .resume-p{
