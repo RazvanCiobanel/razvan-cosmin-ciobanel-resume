@@ -59,7 +59,7 @@ const ResumeObj = () => {
             <div className="projects">
                 <h2>Projects</h2><br/>  
                 <div>
-                    <h2>WeEATHER APPLICATION - <cite>My Weather</cite></h2>
+                    <h2>WEATHER APPLICATION - <cite>My Weather</cite></h2>
                     <MyLink href="https://github.com/Sirius1402/weather-application"
                     target="_blank"
                     rel="noopener noreferrer">https://github.com/Sirius1402/weather-application</MyLink>
