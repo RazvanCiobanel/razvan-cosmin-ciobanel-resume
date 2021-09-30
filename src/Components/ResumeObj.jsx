@@ -66,6 +66,7 @@ const ResumeObj = () => {
                     <p>
                     Weather website made with ReactJS and powered by WeatherAPI.com. 
                     It provides data for local weather, daily and hourly forecast and world-wide weather.
+                    For testing the application I have used React Testing Library and Mock Service Worker, to mock API calls.
                     </p>
                 </div> <br/>             
                 <div>
@@ -76,17 +77,6 @@ const ResumeObj = () => {
                     <p>A to do list done with ReactJS. 
                         In this project I have used the following HTTP request methods to a local server: GET, POST, PATCH, DELETE.
                     </p>
-                </div><br/>
-                <div>
-                    <h2>CODECOOL REACT AND MORTY</h2>
-                    <MyLink href="https://github.com/Sirius1402/React-and-Morty"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    https://github.com/Sirius1402/React-and-Morty
-                    </MyLink>
-                    <p>A landing page about adult animated science fiction sitcom "Rick and Morty". 
-                        Project is done with ReactJS and React-Bootstrap. 
-                        In this project I have automatically tested some of the components with React Testing Library.</p>
                 </div><br/>
                 <div>
                     <h2>CODECOOL BOOK A TABLE</h2>
