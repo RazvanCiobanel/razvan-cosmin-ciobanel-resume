@@ -70,7 +70,7 @@ const PersInfo = () => {
                 <p>
                 I am willing to learn new front end and back end technologies. 
                 I have a good understanding of responsive web design and SEO practices. 
-                I am a consistent person and I like to achive my goals.
+                I am a consistent person and I like to achieve my goals.
                 </p>
             </div> <br />
             <div className="container">
