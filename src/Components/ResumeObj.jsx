@@ -52,7 +52,7 @@ const ResumeObj = () => {
                 <p className="period">October 2014 - January 2016</p>
                 <p className="job-edu">Master Degree in Navigation and Naval Engineering at Constanta Maritime University</p><br/>
                 <p className="period">October 2009 - July 2013</p>
-                <p className="job-edu">Bachelor Degree in Navigation and Naval Engineering at Constanta Maritime University</p>
+                <p className="job-edu">Bachelor Degree in in Navigation and Maritime and Inland Waterway Transport at Constanta Maritime University</p>
             </div>
             <br/>
             <hr/>
