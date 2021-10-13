@@ -14,7 +14,7 @@ updates:
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
-    directory: "/razvan-cosmin-ciobanel-resume"
+    directory: "/"
     schedule:
       interval: "daily"
     
