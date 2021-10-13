@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.3.0",
+    "ansi-html-community": "^0.0.8",
     "create-app-react": "^1.0.6",
     "glob-parent": "^6.0.2",
     "immer": "^9.0.6",
