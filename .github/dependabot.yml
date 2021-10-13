@@ -17,4 +17,4 @@ updates:
     directory: "/razvan-ciobanel-resume"
     schedule:
       interval: "daily"
-    target-branch: "main"
+    
