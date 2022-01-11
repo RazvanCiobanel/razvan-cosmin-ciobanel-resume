@@ -10,7 +10,7 @@
     "ansi-html-community": "^0.0.8",
     "create-app-react": "^1.0.6",
     "glob-parent": "^6.0.2",
-    "immer": "^9.0.7",
+    "immer": "^9.0.12",
     "json-schema": "^0.4.0",
     "node-forge": "^1.2.0",
     "nth-check": "^2.0.1",
