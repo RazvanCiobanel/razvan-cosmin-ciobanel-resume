@@ -59,7 +59,7 @@ const PersInfo = () => {
                     </MyLink>
                 </p> <br />
                 <p className="text">
-                    <MyLink href="https://github.com/Sirius1402"
+                    <MyLink href="https://github.com/RazvanCiobanel"
                         target="_blank"
                         rel="noopener noreferrer">GitHub Profile
                     </MyLink>
