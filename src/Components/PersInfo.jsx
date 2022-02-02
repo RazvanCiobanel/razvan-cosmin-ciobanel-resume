@@ -45,7 +45,7 @@ const PersInfo = () => {
             <div className="container">
                 <h2>Contact</h2>
                 <p className="text">Email:</p>
-                <Email><Mailto>razvanciobanel@protonmail.com</Mailto></Email> <br />
+                <Email><Mailto>razvanciobanel@tuta.io</Mailto></Email> <br />
                 <p className="text">Mobile phone:</p>
                 <p>
                     <MyLink href="tel:0040767206722"

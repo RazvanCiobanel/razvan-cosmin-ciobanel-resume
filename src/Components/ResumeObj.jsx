@@ -17,7 +17,7 @@ const ResumeObj = () => {
             <div className="container">
                 <p className="resume-p">
                     Highly motivated Merchant Navy Third Officer, I completed <cite>Front End Developer Course</cite> at Codecool Romania. 
-                    I am eager to improve my front end developer skills in designing, building and testing user oriented and responsive web applications.
+                    I am eager to improve my front end developer skills in designing, building and testing user-oriented and responsive web applications.
                 </p>
                 <br/>
                 <hr/>
@@ -29,8 +29,8 @@ const ResumeObj = () => {
                 <p className="job-edu">Merchant Navy Third Officer - In charge with safety of navigation.</p>
                 <ul className="skills">
                     <p>Skills gained:</p>
-                    <li>Good team player with great communication skills - as third officer I worked in multinational teams;</li>
-                    <li>I am adaptable and I integrate well in any team - every time I was going at sea I had other co-workers;</li>
+                    <li>Good team player with great communication skills - as a third officer I worked in multinational teams;</li>
+                    <li>I am adaptable and I integrate well into any team - every time I was going at sea I had other co-workers;</li>
                     <li>Experience in organizing a team - during my shifts I was team leader.</li>
                 </ul>
             </div>
