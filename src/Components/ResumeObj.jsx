@@ -66,7 +66,7 @@ const ResumeObj = () => {
                     rel="noopener noreferrer">https://github.com/Sirius1402/weather-application</MyLink>
                     <p>
                     Weather website made with ReactJS and powered by WeatherAPI.com. 
-                    It provides data for local weather, daily and hourly forecast and world-wide weather. 
+                    It provides data for local weather, daily and hourly forecasts and world-wide weather. 
                     For testing the application I used React Testing Library and Mock Service Worker, to mock API calls.
                     </p>
                 </div> <br/>             
@@ -76,7 +76,7 @@ const ResumeObj = () => {
                     target="_blank"
                     rel="noopener noreferrer">https://github.com/Sirius1402/Serverless-todo-app-http-methods</MyLink>
                     <p>
-                    A to do list done with ReactJS. 
+                    A to-do list done with ReactJS. 
                     In this project I have used the following HTTP request methods to a local server: GET, POST, PATCH, DELETE.
                     </p>
                 </div><br/>
@@ -88,7 +88,7 @@ const ResumeObj = () => {
                     <p>
                     Landing page for a Pizza Restaurant with a form for booking a table. 
                     In the booking form there are validations for email format and for date and time. 
-                    The project is done with HTML5, CSS3 and JavaScript. The project is responsive.
+                    The project is done with HTML5, CSS3, and JavaScript. The project is responsive.
                     </p>
                 </div><br/>
                 
