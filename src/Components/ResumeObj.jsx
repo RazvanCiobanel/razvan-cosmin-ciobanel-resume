@@ -119,7 +119,8 @@ const ResumeObj = () => {
             Weather website made with ReactJS and powered by WeatherAPI.com. It
             provides data for local weather, daily and hourly forecasts and
             world-wide weather. For testing the application I used React Testing
-            Library and Mock Service Worker, to mock API calls.
+            Library and Mock Service Worker, to mock API calls. It is served by
+            an ExpressJS backend build by me.
           </p>
         </div>{" "}
         <br />
