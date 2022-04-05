@@ -48,7 +48,7 @@ const PersInfo = () => {
         <h2>Contact</h2>
         <p className="text">Email:</p>
         <Email>
-          <Mailto>razvanciobanel@tuta.io</Mailto>
+          <Mailto>razvancciobanel@gmail.com</Mailto>
         </Email>{" "}
         <br />
         <p className="text">Mobile phone:</p>
