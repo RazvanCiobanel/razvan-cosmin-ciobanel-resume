@@ -47,6 +47,10 @@ const ResumeObj = () => {
             Experience in organizing a team - during my shifts I was team
             leader.
           </li>
+          <li>
+            Problem-solving and decision-making skills - I had to make decisions
+            in a very dynamic environment
+          </li>
         </ul>
       </div>
       <br />
@@ -135,9 +139,9 @@ const ResumeObj = () => {
           <p>
             This repository simulates an e-commerce platform. It uses a GraphQL
             backend. For your information the backend is not done by me. The
-            frontend is done by me, in ReactJs, with class components. To
-            manage the global state of application I used redux.Other libraries
-            used for this repository:@apollo/client; dompurify; graphql;
+            frontend is done by me, in ReactJs, with class components. To manage
+            the global state of application I used redux.Other libraries used
+            for this repository:@apollo/client; dompurify; graphql;
             graphql-config; react-redux; react-router-dom; redux-persist;
             redux-thunk; styled-components; weak-key; reselect;
           </p>
