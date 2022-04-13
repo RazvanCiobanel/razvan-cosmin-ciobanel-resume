@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "async": "^3.2.3",
     "gh-pages": "^3.2.3",
     "postcss": "^8.4.12"
   }
