@@ -155,17 +155,7 @@ const ResumeObj = () => {
           <p>
             This repository simulates an e-commerce
             platform. It uses a GraphQL backend. For your
-            information the backend is not done by me. This
-            is the{" "}
-            <MyLink
-              href="https://github.com/scandiweb/junior-react-endpoint"
-              target="_blank"
-              rel="noopener noreferrer"
-            ><u>
-              link
-              </u>
-            </MyLink>{" "}
-            to original backend repository.The frontend is
+            information the backend is not done by me. The frontend is
             done by me, in ReactJs, with class components.
             To manage the global state of application I used
             redux.Other libraries used for this
