@@ -154,10 +154,14 @@ const ResumeObj = () => {
           </MyLink>
           <p>
             This repository simulates an e-commerce
-            platform. It uses a GraphQL backend. For your
-            information the backend is not done by me. The frontend is
-            done by me, in ReactJs, with class components.
-            To manage the global state of application I used
+            platform.You can add products to the shopping
+            cart, increase and decrease the amount of
+            products in the shopping cart, romove products
+            from the shopping cart, and change currency. It
+            uses a GraphQL backend. For your information the
+            backend is not done by me. The frontend is done
+            by me, in ReactJs, with class components. To
+            manage the global state of application I used
             redux.Other libraries used for this
             repository:@apollo/client; dompurify; graphql;
             graphql-config; react-redux; react-router-dom;
