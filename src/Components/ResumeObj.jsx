@@ -157,16 +157,20 @@ const ResumeObj = () => {
             platform.You can add products to the shopping
             cart, increase and decrease the amount of
             products in the shopping cart, romove products
-            from the shopping cart, and change currency. It
-            uses a GraphQL backend. For your information the
-            backend is not done by me. The frontend is done
-            by me, in ReactJs, with class components. To
-            manage the global state of application I used
-            redux.Other libraries used for this
-            repository:@apollo/client; dompurify; graphql;
-            graphql-config; react-redux; react-router-dom;
-            redux-persist; redux-thunk; styled-components;
-            weak-key; reselect;
+            from the shopping cart, and change currency.
+          </p>
+          <p>
+            It uses a GraphQL backend. For your information
+            the backend is not done by me.
+          </p>
+          <p>
+            The frontend is done by me, in ReactJs, with
+            class components. To manage the global state of
+            application I used redux. Other libraries used
+            for this repository:@apollo/client; dompurify;
+            graphql; graphql-config; react-redux;
+            react-router-dom; redux-persist; redux-thunk;
+            styled-components; weak-key; reselect;
           </p>
         </div>
         <br />
