@@ -61,7 +61,7 @@
     "gh-pages": "^3.2.3",
     "jake": "^10.8.5",
     "portfinder": "^1.0.28",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.13",
     "svgo": "^2.8.0",
     "workbox-build": "^6.5.3",
     "workbox-webpack-plugin": "^6.5.3"
