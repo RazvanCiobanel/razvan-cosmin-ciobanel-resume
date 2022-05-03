@@ -6,7 +6,7 @@
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
+    "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.1.1",
     "ansi-html-community": "^0.0.8",
     "create-app-react": "^1.0.6",
