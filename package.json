@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^14.1.1",
     "ansi-html-community": "^0.0.8",
     "create-app-react": "^1.0.6",
-    "follow-redirects": "^1.14.9",
+    "follow-redirects": "^1.15.0",
     "glob-parent": "^6.0.2",
     "immer": "^9.0.12",
     "json-schema": "^0.4.0",
