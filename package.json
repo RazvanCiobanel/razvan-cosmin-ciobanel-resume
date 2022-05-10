@@ -58,7 +58,7 @@
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "async": "^3.2.3",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^4.0.0",
     "jake": "^10.8.5",
     "portfinder": "^1.0.28",
     "postcss": "^8.4.13",
