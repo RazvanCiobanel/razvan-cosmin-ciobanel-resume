@@ -175,20 +175,21 @@ const ResumeObj = () => {
         </div>
         <br />
         <div>
-          <h2>CODECOOL BOOK A TABLE</h2>
+          <h2>MERN STACK APPLICATION</h2>
           <MyLink
-            href="https://github.com/RazvanCiobanel/Book-a-table"
+            href="https://github.com/RazvanCiobanel/Dr-John-Doe"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/RazvanCiobanel/Book-a-table
+            https://github.com/RazvanCiobanel/Dr-John-Doe
           </MyLink>
           <p>
-            Landing page for a Pizza Restaurant with a form
-            for booking a table. In the booking form there
-            are validations for email format and for date
-            and time. The project is done with HTML5, CSS3,
-            and JavaScript. The project is responsive.
+            MERN web application. It simulates a
+            presentation website. As special functionality
+            you can choose between two languages: english
+            and romanian. To build the application I used
+            MongoDB, Express, React and Redux. The webiste
+            is responsive at 768px.
           </p>
         </div>
         <br />
