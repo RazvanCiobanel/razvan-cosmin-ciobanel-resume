@@ -9,15 +9,18 @@ const Photo = styled.img`
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 1rem;
 `;
 
 const Email = styled.p`
   overflow-wrap: break-word;
+  padding-bottom: 1rem;
 `;
 
 const MyLink = styled.a`
   text-decoration: none;
   color: #155171;
+  padding-bottom: 1rem;
 
   &:focus,
   &:hover,
@@ -32,34 +35,48 @@ const MyLink = styled.a`
 `;
 
 const PersInfo = () => {
-  const Mailto = ({ email, subject = "", body = "", children }) => {
+  const Mailto = ({
+    email,
+    subject = "",
+    body = "",
+    children,
+  }) => {
     let params = subject || body ? "?" : "";
-    if (subject) params += `subject=${encodeURIComponent(subject)}`;
-    if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
+    if (subject)
+      params += `subject=${encodeURIComponent(subject)}`;
+    if (body)
+      params += `${
+        subject ? "&" : ""
+      }body=${encodeURIComponent(body)}`;
 
-    return <MyLink href={`mailto:${email}${params}`}>{children}</MyLink>;
+    return (
+      <MyLink href={`mailto:${email}${params}`}>
+        {children}
+      </MyLink>
+    );
   };
   return (
     <div className="personal-info">
       <Photo src={photo} alt="Razvan-Cosmin Ciobanel" />
-      <h2>Razvan-Cosmin Ciobanel</h2>
-      <br />
+      <h2 className="name">Razvan-Cosmin Ciobanel</h2>
       <div className="container">
-        <h2>Contact</h2>
+        <h2 className="name">Contact</h2>
         <p className="text">Email:</p>
         <Email>
-          <Mailto email="razvancciobanel@gmail.com">razvancciobanel@gmail.com</Mailto>
-        </Email>{" "}
-        <br />
+          <Mailto email="razvancciobanel@gmail.com">
+            razvancciobanel@gmail.com
+          </Mailto>
+        </Email>
         <p className="text">Mobile phone:</p>
-        <p>
-          <MyLink href="tel:0040767206722" rel="noopener noreferrer">
-            {" "}
+        <p className="profile">
+          <MyLink
+            href="tel:0040767206722"
+            rel="noopener noreferrer"
+          >
             0040767206722
           </MyLink>
-        </p>{" "}
-        <br />
-        <p className="text">
+        </p>
+        <p className="profile">
           <MyLink
             href="https://www.linkedin.com/in/razvan-cosmin-ciobanel-18237221b"
             target="_blank"
@@ -67,9 +84,8 @@ const PersInfo = () => {
           >
             LinkedIn Profile
           </MyLink>
-        </p>{" "}
-        <br />
-        <p className="text">
+        </p>
+        <p className="profile">
           <MyLink
             href="https://github.com/RazvanCiobanel"
             target="_blank"
@@ -79,16 +95,15 @@ const PersInfo = () => {
           </MyLink>
         </p>
       </div>
-      <br />
       <div className="container">
         <h2>Self definition</h2>
         <p>
-          I am willing to learn new front end and back end technologies. I have
-          a good understanding of responsive web design and SEO practices. I am
-          a consistent person and I like to achieve my goals.
+          I am willing to learn new front end and back end
+          technologies. I have a good understanding of
+          responsive web design and SEO practices. I am a
+          consistent person and I like to achieve my goals.
         </p>
-      </div>{" "}
-      <br />
+      </div>
       <div className="container">
         <h2>Spoken languages</h2>
         <p className="text">English - C2 Advanced level</p>

@@ -4,7 +4,7 @@
 }
 .App {
   text-align: center;
-  font-family: 'Calibri', sans-serif;
+  font-family: "Calibri", sans-serif;
   display: flex;
   flex-direction: column;
   color: #155171;
@@ -18,7 +18,11 @@
   color: #155171;
   padding: 1rem;
   height: auto;
-  width: 90vw; 
+  width: 90vw;
+}
+
+.name {
+  padding-bottom: 1rem;
 }
 
 .text {
@@ -27,22 +31,29 @@
   width: 100%;
 }
 
+.profile {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
 .container {
   text-align: left;
   line-height: 1.5rem;
   font-size: 1.1rem;
   width: 100%;
+  padding-bottom: 1rem;
 }
-
 
 .resume-obj {
   width: 90vw;
 }
 
-.resume-p{
+.resume-p {
   padding: 1rem;
 }
-.work-edu-container{
+.work-edu-container {
   text-align: left;
   padding: 1rem;
   width: 100%;
@@ -51,20 +62,27 @@ ul {
   padding: 1rem;
 }
 
-.projects{
+.projects {
   text-align: left;
   padding: 1rem;
   width: 100%;
 }
 
+.project-container {
+  padding-bottom: 1rem;
+}
+
+.projects__header {
+  padding-bottom: 1rem;
+}
+
 @media all and (min-width: 401px) {
   .App {
     text-align: center;
-    font-family: 'Calibri', sans-serif;
+    font-family: "Calibri", sans-serif;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: minmax(1px, auto);
-    
   }
   .personal-info {
     grid-row: 1/-1;
@@ -78,7 +96,6 @@ ul {
     margin-top: 30px;
     text-align: left;
   }
-  
 
   .work-edu-container {
     display: grid;

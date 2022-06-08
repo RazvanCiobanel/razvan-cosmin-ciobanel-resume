@@ -25,9 +25,7 @@ const ResumeObj = () => {
           and testing user-oriented and responsive web
           applications.
         </p>
-        <br />
         <hr />
-        <br />
       </div>
       <div className="work-edu-container">
         <h2 className="header">Work experience</h2>
@@ -59,12 +57,9 @@ const ResumeObj = () => {
           </li>
         </ul>
       </div>
-      <br />
       <hr />
-      <br />
       <div className="work-edu-container">
         <h2 className="header">Education</h2>
-        <br />
         <p className="period">March 2021 - August 2021</p>
         <p className="job-edu">
           Front-end Developer Course at CodeCool Romania
@@ -100,7 +95,6 @@ const ResumeObj = () => {
             mindset.
           </li>
         </ul>
-        <br />
         <p className="period">
           October 2014 - January 2016
         </p>
@@ -116,13 +110,10 @@ const ResumeObj = () => {
           University
         </p>
       </div>
-      <br />
       <hr />
-      <br />
       <div className="projects">
-        <h2>Projects</h2>
-        <br />
-        <div>
+        <h2 className="projects__header">Projects</h2>
+        <div className="project-container">
           <h2>
             WEATHER APPLICATION - <cite>My Weather</cite>
           </h2>
@@ -141,9 +132,8 @@ const ResumeObj = () => {
             backend build by me. The project is ready to be
             deployed.
           </p>
-        </div>{" "}
-        <br />
-        <div>
+        </div>
+        <div className="project-container">
           <h2>E-COMMERCE PLATFORM</h2>
           <MyLink
             href="https://github.com/RazvanCiobanel/e-commerce-platform"
@@ -173,8 +163,7 @@ const ResumeObj = () => {
             styled-components; weak-key; reselect;
           </p>
         </div>
-        <br />
-        <div>
+        <div className="project-container">
           <h2>MERN STACK APPLICATION</h2>
           <MyLink
             href="https://github.com/RazvanCiobanel/Dr-John-Doe"
@@ -192,7 +181,6 @@ const ResumeObj = () => {
             is responsive at 768px.
           </p>
         </div>
-        <br />
       </div>
     </div>
   );
