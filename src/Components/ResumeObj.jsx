@@ -39,21 +39,31 @@ const ResumeObj = () => {
           <li>
             Good team player with great communication skills
             - as a third officer I worked in multinational
-            teams;
+            teams and for the time of the contract I was
+            living 24 hours with same 22 people;
           </li>
           <li>
             I am adaptable and I integrate well into any
             team - every time I was going at sea I had other
-            co-workers;
+            co-workers from different nationalities and with
+            different customs;
           </li>
           <li>
             Experience in organizing a team - during my
-            shifts I was team leader.
+            shifts I was team leader and in charge with
+            supervising cargo operations;
           </li>
           <li>
             Problem-solving and decision-making skills - I
             had to make decisions in a very dynamic
-            environment
+            environment to avoid collisions and close
+            quarter situations with other ships;
+          </li>
+          <li>
+            Professionalism and working under pressure - I
+            had to maintain operational all the time and in
+            good working condition life saving appliances
+            and fire fighting equipment
           </li>
         </ul>
       </div>
@@ -180,6 +190,13 @@ const ResumeObj = () => {
             MongoDB, Express, React and Redux. The webiste
             is responsive at 768px.
           </p>
+        </div>
+        <div className="project-container">
+          <h2>Digital skilss :</h2>
+          HTML, JavaScript and CSS | NodeJS, ExpressJS, ReactJS | Bootsrap | React Hooks, React
+Router & React Redux, | Redux state library | -Web
+applications(HTML+CSS+Javascript+JQuerry+Express+Node+Mongo) | GIT Hub | Rest
+API | GraphQL APIs | Apollo Client | Visual Studio - Visual Studio Code | Styled-Components
         </div>
       </div>
     </div>
