@@ -191,14 +191,20 @@ const ResumeObj = () => {
             is responsive at 768px.
           </p>
         </div>
-        <div className="project-container">
-          <h2>Digital skilss :</h2>
-          HTML, JavaScript and CSS | NodeJS, ExpressJS, ReactJS | Bootsrap | React Hooks, React
-Router & React Redux, | Redux state library | -Web
-applications(HTML+CSS+Javascript+JQuerry+Express+Node+Mongo) | GIT Hub | Rest
-API | GraphQL APIs | Apollo Client | Visual Studio - Visual Studio Code | Styled-Components
-        </div>
+        <hr />        
       </div>
+      <div className="projects">
+          <h2 className="projects__header">
+            Digital skilss :
+          </h2>
+          HTML, JavaScript and CSS | NodeJS, ExpressJS,
+          ReactJS | Bootsrap | React Hooks, React Router &
+          React Redux | Redux state library | Web
+          applications(HTML+CSS+Javascript+JQuerry+Express+Node+Mongo)
+          | GIT Hub | Rest API | GraphQL APIs | Apollo
+          Client | Visual Studio - Visual Studio Code |
+          Styled-Components
+        </div>
     </div>
   );
 };
