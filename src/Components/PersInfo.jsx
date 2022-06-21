@@ -67,15 +67,6 @@ const PersInfo = () => {
             razvancciobanel@gmail.com
           </Mailto>
         </Email>
-        <p className="text">Mobile phone:</p>
-        <p className="profile">
-          <MyLink
-            href="tel:0040767206722"
-            rel="noopener noreferrer"
-          >
-            0040767206722
-          </MyLink>
-        </p>
         <p className="profile">
           <MyLink
             href="https://www.linkedin.com/in/razvan-cosmin-ciobanel-18237221b"
