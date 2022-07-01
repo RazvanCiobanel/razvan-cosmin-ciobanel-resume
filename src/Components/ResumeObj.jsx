@@ -185,8 +185,8 @@ const ResumeObj = () => {
           <p>
             MERN web application. It simulates a
             presentation website. As special functionality
-            you can choose between two languages: english
-            and romanian. To build the application I used
+            you can choose between two languages: English
+            and Romanian. To build the application I used
             MongoDB, Express, React and Redux. The webiste
             is responsive at 768px.
           </p>
