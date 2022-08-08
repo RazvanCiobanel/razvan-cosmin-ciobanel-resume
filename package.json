@@ -60,7 +60,7 @@
     "async": "^3.2.4",
     "gh-pages": "^4.0.0",
     "jake": "^10.8.5",
-    "portfinder": "^1.0.28",
+    "portfinder": "^1.0.29",
     "postcss": "^8.4.14",
     "svgo": "^2.8.0",
     "workbox-build": "^6.5.4",
