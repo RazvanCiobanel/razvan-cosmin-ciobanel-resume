@@ -23,7 +23,7 @@
     "set-value": "^4.1.0",
     "styled-components": "^5.3.6",
     "web-vitals": "^3.0.2",
-    "webpack-dev-server": "^4.10.0"
+    "webpack-dev-server": "^4.11.1"
   },
   "engines": {
     "node": ">=16.6.2",
