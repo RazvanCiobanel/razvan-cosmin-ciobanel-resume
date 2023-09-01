@@ -19,7 +19,7 @@ const ResumeObj = () => {
       <div className="container">
         <p className="resume-p">
           Highly motivated Merchant Navy Third Officer, I
-          completed <cite>Front End Developer Course</cite>{" "}
+          completed the <cite>Front End Developer Course</cite>{" "}
           at Codecool Romania. I am eager to improve my
           front end developer skills in designing, building
           and testing user-oriented and responsive web
@@ -139,8 +139,7 @@ const ResumeObj = () => {
             WeatherAPI.com. It provides data for local
             weather, daily and hourly forecasts and
             world-wide weather. It is served by an ExpressJS
-            backend build by me. The project is ready to be
-            deployed.
+            backend build by me.
           </p>
         </div>
         <div className="project-container">
@@ -200,10 +199,10 @@ const ResumeObj = () => {
           HTML, JavaScript and CSS | NodeJS, ExpressJS,
           ReactJS | Bootsrap | React Hooks, React Router &
           React Redux | Redux state library | Web
-          applications(HTML+CSS+Javascript+JQuerry+Express+Node+Mongo)
+          applications(HTML+CSS+Javascript+Express+Node+Mongo)
           | GIT Hub | Rest API | GraphQL APIs | Apollo
           Client | Visual Studio - Visual Studio Code |
-          Styled-Components
+          Styled-Components | GIT Hub Pages | Redux Toolkit
         </div>
     </div>
   );
