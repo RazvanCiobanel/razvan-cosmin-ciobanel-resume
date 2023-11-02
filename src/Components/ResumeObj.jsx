@@ -189,7 +189,9 @@ const ResumeObj = () => {
             . This project is a backend written in NodeJs which can read Spotify
             data from a CSV file and perform the following tasks: can identify
             the number of songs in the file and can identify the number of songs
-            in the key of E.
+            in the key of E. To view my contribution clone the repository and
+            open "RazvanCiobanel" folder from "submisions" folder. After that
+            run in the terminal "node index.js" command.
           </p>
         </div>
         <hr />
