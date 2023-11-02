@@ -178,7 +178,7 @@ const ResumeObj = () => {
             https://github.com/RazvanCiobanel/file-io
           </MyLink>
           <p>
-            I paricipated at Hacktoberfest 2023 as member of{" "}
+            I participated at Hacktoberfest 2023 as member of{" "}
             <MyLink
               href="https://zerotomastery.io/"
               target="_blank"
@@ -190,7 +190,7 @@ const ResumeObj = () => {
             data from a CSV file and perform the following tasks: can identify
             the number of songs in the file and can identify the number of songs
             in the key of E. To view my contribution clone the repository and
-            open "RazvanCiobanel" folder from "submisions" folder. After that
+            open "RazvanCiobanel" folder from "submissions" folder. After that
             run in the terminal "node index.js" command.
           </p>
         </div>
