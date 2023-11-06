@@ -58,7 +58,7 @@
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.22.11",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
-    "async": "^3.2.4",
+    "async": "^3.2.5",
     "gh-pages": "^6.0.0",
     "jake": "^10.8.7",
     "portfinder": "^1.0.32",

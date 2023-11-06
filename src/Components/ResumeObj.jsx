@@ -27,7 +27,7 @@ const ResumeObj = () => {
       </div>
       <div className="work-edu-container">
         <h2 className="header">Work experience</h2>
-        <p className="period">May 2015 - May 2020</p>
+        <p className="period">May 2015 - June 2023</p>
         <p className="job-edu">
           Merchant Navy Third Officer - In charge with safety of navigation.
         </p>
