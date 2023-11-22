@@ -59,7 +59,7 @@
     "@babel/plugin-transform-private-property-in-object": "^7.23.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "async": "^3.2.5",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.0",
     "jake": "^10.8.7",
     "portfinder": "^1.0.32",
     "postcss": "^8.4.31",
