@@ -60,7 +60,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
     "async": "^3.2.5",
     "gh-pages": "^6.1.1",
-    "jake": "^10.8.7",
+    "jake": "^10.9.1",
     "portfinder": "^1.0.32",
     "postcss": "^8.4.38",
     "svgo": "^3.2.0",
