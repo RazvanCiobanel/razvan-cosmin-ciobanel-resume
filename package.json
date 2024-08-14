@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "ansi-html-community": "^0.0.8",
@@ -18,10 +18,10 @@
     "nth-check": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
+    "react-icons": "^5.3.0",
     "react-scripts": "5.0.1",
     "set-value": "^4.1.0",
-    "styled-components": "^6.1.11",
+    "styled-components": "^6.1.12",
     "web-vitals": "^4.2.3",
     "webpack-dev-server": "^5.0.4"
   },
@@ -60,9 +60,9 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "async": "^3.2.5",
     "gh-pages": "^6.1.1",
-    "jake": "^10.9.1",
+    "jake": "^10.9.2",
     "portfinder": "^1.0.32",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.41",
     "svgo": "^3.3.2",
     "workbox-build": "^7.1.1",
     "workbox-webpack-plugin": "^7.1.0"
