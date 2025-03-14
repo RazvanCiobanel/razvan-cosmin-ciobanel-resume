@@ -69,7 +69,7 @@ const PersInfo = () => {
         </Email>
         <p className="profile">
           <MyLink
-            href="www.linkedin.com/in/razvan-cosmin-ciobanel-832945351"
+            href="https://www.linkedin.com/in/razvan-cosmin-ciobanel-832945351/"
             target="_blank"
             rel="noopener noreferrer"
           >
