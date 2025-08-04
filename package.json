@@ -63,7 +63,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "async": "^3.2.6",
     "gh-pages": "^6.3.0",
-    "jake": "^10.9.2",
+    "jake": "^10.9.4",
     "portfinder": "^1.0.37",
     "postcss": "^8.5.6",
     "svgo": "^4.0.0",
