@@ -27,7 +27,7 @@ const ResumeObj = () => {
       </div>
       <div className="work-edu-container">
         <h2 className="header">Work experience</h2>
-        <p className="period">December 2015 - Present</p>
+        <p className="period">December 2023 - Present</p>
         <p className="job-edu">
           Game Presenter, at Arrise Live SRL
         </p>
