@@ -33,9 +33,9 @@ const ResumeObj = () => {
         </p>
         <ul className="skills">
           <p>Skills gained:</p>
-          <li>Socializing, because it is first time when I work with so many people around me</li>
-          <li>Attention to detail, because I must be immaculate before the shift starts </li>
-          <li>Distributed attention, to synchronize with cameras and to talk with the players</li>
+          <li>Socializing, because it is first time when I work with so many people around me;</li>
+          <li>Attention to detail, because I must be immaculate before the shift starts;</li>
+          <li>Distributed attention, to synchronize with cameras and to talk with the players;</li>
           </ul>
         <p className="period">May 2015 - June 2023</p>
         <p className="job-edu">
