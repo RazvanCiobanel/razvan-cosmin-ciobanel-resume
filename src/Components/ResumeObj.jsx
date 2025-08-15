@@ -27,6 +27,16 @@ const ResumeObj = () => {
       </div>
       <div className="work-edu-container">
         <h2 className="header">Work experience</h2>
+        <p className="period">December 2015 - Present</p>
+        <p className="job-edu">
+          Game Presenter, at Arrise Live SRL
+        </p>
+        <ul className="skills">
+          <p>Skills gained:</p>
+          <li>Socializing, because it is first time when I work with so many people around me</li>
+          <li>Attention to detail, because I must be immaculate before the shift starts </li>
+          <li>Distributed attention, to synchronize with cameras and to talk with the players</li>
+          </ul>
         <p className="period">May 2015 - June 2023</p>
         <p className="job-edu">
           Merchant Navy Third Officer - In charge with safety of navigation.
@@ -56,6 +66,9 @@ const ResumeObj = () => {
             Professionalism and working under pressure - I had to maintain
             operational all the time and in good working condition life saving
             appliances and fire fighting equipment
+          </li>
+          <li>
+            Proficiency with Microsoft Office and ability to meet deadlines, I was assisting the captain to prepare pre-arrival and arrival documents for all ports.
           </li>
         </ul>
       </div>
@@ -152,22 +165,7 @@ const ResumeObj = () => {
             redux-thunk; styled-components; weak-key; reselect;
           </p>
         </div>
-        <div className="project-container">
-          <h2>MERN STACK APPLICATION</h2>
-          <MyLink
-            href="https://github.com/RazvanCiobanel/Dr-John-Doe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/RazvanCiobanel/Dr-John-Doe
-          </MyLink>
-          <p>
-            MERN web application. It simulates a presentation website. As
-            special functionality you can choose between two languages: English
-            and Romanian. To build the application I used MongoDB, Express,
-            React and Redux. The webiste is responsive at 768px.
-          </p>
-        </div>
+        
         <div className="project-container">
           <h2>OPEN SOURCE HACKTOBERFEST 2023</h2>
           <MyLink
