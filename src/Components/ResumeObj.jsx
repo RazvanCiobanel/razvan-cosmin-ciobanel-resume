@@ -133,7 +133,7 @@ const ResumeObj = () => {
           </MyLink>
           <p>
             Weather website made with ReactJS and powered by WeatherAPI.com. It
-            provides data for local weather, daily and hourly forecasts and
+            provides data for local weather, daily forecasts and
             world-wide weather. It is served by an ExpressJS backend build by
             me.
           </p>
