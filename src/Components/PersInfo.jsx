@@ -97,7 +97,7 @@ const PersInfo = () => {
       </div>
       <div className="container">
         <h2>Spoken languages</h2>
-        <p className="text">English - C2 Advanced level</p>
+        <p className="text">English - Advanced level</p>
       </div>
     </div>
   );
