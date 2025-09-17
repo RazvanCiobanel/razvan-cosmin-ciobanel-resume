@@ -18,7 +18,7 @@ const ResumeObj = () => {
     <div className="resume-obj">
       <div className="container">
         <p className="resume-p">
-          Highly motivated Merchant Navy Third Officer, I completed the{" "}
+          Highly motivated engineer, I completed the{" "}
           <cite>Front End Developer Course</cite> at Codecool Romania. I am
           eager to improve my front end developer skills in designing, building
           and testing user-oriented and responsive web applications.
