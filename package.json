@@ -62,7 +62,7 @@
     "portfinder": "^1.0.38",
     "postcss": "^8.5.6",
     "svgo": "^4.0.0",
-    "workbox-build": "^7.3.0",
+    "workbox-build": "^7.4.0",
     "workbox-webpack-plugin": "^7.3.0"
   }
 }
