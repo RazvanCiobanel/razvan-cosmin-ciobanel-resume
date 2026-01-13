@@ -45,7 +45,7 @@ jobs:
       # Only on direct pushes to main
       - name: Upload artifact for GitHub Pages
         if: github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]' && !contains(github.event.head_commit.message, 'Merge pull request') && steps.nodecheck.conclusion != 'failure'
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
