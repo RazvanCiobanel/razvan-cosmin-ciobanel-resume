@@ -17,6 +17,8 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout repository
