@@ -20,9 +20,9 @@ const ResumeObj = () => {
         <p className="resume-p">
           Highly motivated engineer, I completed the{" "}
           <cite>Front End Developer Course</cite> at
-          Codecool Romania. I am eager to improve my
-          front-end developer skills in designing, building
-          and testing user-oriented and responsive web
+          Codecool Romania. I am eager to improve my front
+          end developer skills in designing, building and
+          testing user-oriented and responsive web
           applications.
         </p>
         <hr />
