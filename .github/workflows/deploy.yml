@@ -12,6 +12,7 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout repository
@@ -32,19 +33,20 @@ jobs:
       - name: Check Node version compatibility
         id: nodecheck
         run: |
-          # Install check-node-version CLI
           npm install --no-save check-node-version
-
-          # Fail if dependency requires Node higher than CI Node
           npx check-node-version --node ">=20" || exit 1
 
       # 5️⃣ Build project
       - name: Build project
         run: npm run build
 
-      # 6️⃣ Deploy to GitHub Pages (only on main branch)
+      # 6️⃣ Deploy to GitHub Pages
+      # ✔ Only on direct pushes to main
+      # ❌ Never on PR merges (human or bot)
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
+        if: |
+          github.ref == 'refs/heads/main' &&
+          !contains(github.event.head_commit.message, 'Merge pull request')
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
