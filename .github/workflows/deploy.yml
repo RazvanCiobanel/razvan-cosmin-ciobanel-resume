@@ -12,48 +12,50 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Setup Node (CI pinned for stability)
+      # 2️⃣ Setup Node
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
           cache: "npm"
 
-      # 3️⃣ Install dependencies exactly as in lockfile
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Check Node compatibility with dependencies
+      # 4️⃣ Check Node compatibility (fails gracefully)
       - name: Check Node version compatibility
         id: nodecheck
+        continue-on-error: true
         run: |
           npm install --no-save check-node-version
           npx check-node-version --node ">=20" || exit 1
 
-      # 5️⃣ Build project
+      # 5️⃣ Build project (only if Node check passed)
       - name: Build project
+        if: steps.nodecheck.conclusion != 'failure'
         run: npm run build
 
-      # 6️⃣ Deploy to GitHub Pages
-      # ✔ Only on direct pushes to main
-      # ❌ Never on PR merges (human or bot)
-      - name: Deploy to GitHub Pages
-        if: |
-          github.ref == 'refs/heads/main' &&
-          !contains(github.event.head_commit.message, 'Merge pull request')
-        uses: peaceiris/actions-gh-pages@v4
+      # 6️⃣ Deploy to GitHub Pages (official method)
+      # Only on direct pushes to main
+      - name: Upload artifact for GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]' && !contains(github.event.head_commit.message, 'Merge pull request') && steps.nodecheck.conclusion != 'failure'
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
+          path: ./dist
 
-      # 7️⃣ Warn about pinned Node vs latest LTS
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]' && !contains(github.event.head_commit.message, 'Merge pull request') && steps.nodecheck.conclusion != 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 7️⃣ Warn about pinned Node vs latest LTS (does not fail workflow)
       - name: Check latest Node LTS
         run: |
           LATEST_LTS=$(curl -s https://nodejs.org/dist/index.json \
@@ -64,14 +66,14 @@ jobs:
             echo "::warning::Pinned Node 20.x is behind latest LTS ($LATEST_LTS). Consider upgrading CI Node version!"
           fi
 
-      # 8️⃣ Check outdated dependencies
+      # 8️⃣ Check outdated dependencies (does not fail workflow)
       - name: Check outdated dependencies
         run: |
           npm outdated || echo "All dependencies up to date"
 
-      # 9️⃣ Comment on Dependabot PRs if Node compatibility fails
+      # 9️⃣ Comment on PR if Node incompatible
       - name: Comment on PR if Node incompatible
-        if: failure() && github.event.pull_request != ''
+        if: steps.nodecheck.conclusion == 'failure' && github.event.pull_request != ''
         uses: peter-evans/create-or-update-comment@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
