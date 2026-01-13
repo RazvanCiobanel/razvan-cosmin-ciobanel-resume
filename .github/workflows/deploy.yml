@@ -1,4 +1,4 @@
-name: CI & Deploy Vite Resume
+name: "CI & Deploy Vite Resume"
 
 permissions:
   contents: read
@@ -19,7 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages # required by deploy-pages@v4
-
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout repository
@@ -49,7 +48,7 @@ jobs:
         if: steps.nodecheck.conclusion != 'failure'
         run: npm run build
 
-      # 6️⃣ Upload artifact for GitHub Pages (official method)
+      # 6️⃣ Upload artifact for GitHub Pages
       - name: Upload artifact for GitHub Pages
         if: github.ref == 'refs/heads/main' &&
           github.actor != 'dependabot[bot]' &&
@@ -78,7 +77,6 @@ jobs:
           echo "Latest Node LTS: $LATEST_LTS"
           if [[ "$LATEST_LTS" != "20" && "$LATEST_LTS" != "" ]]; then
             echo "::warning::Pinned Node 20.x is behind latest LTS ($LATEST_LTS). Consider upgrading CI Node version!"
-          fi
 
       # 9️⃣ Check outdated dependencies (non-blocking)
       - name: Check outdated dependencies
