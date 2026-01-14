@@ -1,26 +1,26 @@
 name: "CI & Deploy Vite Resume"
 
-# Workflow triggers
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
-# Required permissions for deploy-pages@v4
+# Prevent overlapping GitHub Pages deployments
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 permissions:
-  contents: read # for checkout
-  id-token: write # for OIDC authentication
-  pages: write # to deploy GitHub Pages
+  contents: read
+  id-token: write
+  pages: write
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages # required by deploy-pages@v4
+      name: github-pages
 
     steps:
       # 1️⃣ Checkout repository
@@ -38,35 +38,33 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Check Node compatibility (graceful failure)
+      # 4️⃣ Check Node compatibility
       - name: Check Node version compatibility
         id: nodecheck
         continue-on-error: true
         run: |
           npm install --no-save check-node-version
-          npx check-node-version --node ">=20" || exit 1
+          npx check-node-version --node ">=20"
 
       # 5️⃣ Build project (only if Node check passed)
       - name: Build project
-        if: steps.nodecheck.conclusion != 'failure'
+        if: steps.nodecheck.outcome == 'success'
         run: npm run build
 
       # 6️⃣ Upload artifact for GitHub Pages
       - name: Upload artifact for GitHub Pages
-        if: github.ref == 'refs/heads/main' &&
-          github.actor != 'dependabot[bot]' &&
+        if: github.actor != 'dependabot[bot]' &&
           !contains(github.event.head_commit.message, 'Merge pull request') &&
-          steps.nodecheck.conclusion != 'failure'
+          steps.nodecheck.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
       # 7️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main' &&
-          github.actor != 'dependabot[bot]' &&
+        if: github.actor != 'dependabot[bot]' &&
           !contains(github.event.head_commit.message, 'Merge pull request') &&
-          steps.nodecheck.conclusion != 'failure'
+          steps.nodecheck.outcome == 'success'
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -78,24 +76,12 @@ jobs:
             | grep '"lts": "[^"]\+"' | grep -v null | head -n1 \
             | sed 's/.*"\(.*\)".*/\1/')
           echo "Latest Node LTS: $LATEST_LTS"
+
           if [[ "$LATEST_LTS" != "20" && "$LATEST_LTS" != "" ]]; then
             echo "::warning::Pinned Node 20.x is behind latest LTS ($LATEST_LTS). Consider upgrading CI Node version!"
+          fi
 
       # 9️⃣ Check outdated dependencies (non-blocking)
       - name: Check outdated dependencies
         run: |
           npm outdated || echo "All dependencies up to date"
-
-      # 🔟 Comment on PRs if Node incompatible
-      - name: Comment on PR if Node incompatible
-        if: steps.nodecheck.conclusion == 'failure' && github.event.pull_request != ''
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            ⚠️ This PR cannot be merged because some dependency requires a Node version higher than CI Node (20.x).  
-            Recommended actions:
-            1. Upgrade CI Node version in `.github/workflows/deploy.yml` (e.g., 24.x).  
-            2. If not possible, pin the dependency to a version compatible with Node 20.  
-            3. After updating CI Node, re-run the workflow.
