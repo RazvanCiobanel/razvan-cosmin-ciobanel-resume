@@ -56,7 +56,7 @@ jobs:
         if: github.actor != 'dependabot[bot]' &&
           !contains(github.event.head_commit.message, 'Merge pull request') &&
           steps.nodecheck.outcome == 'success'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
