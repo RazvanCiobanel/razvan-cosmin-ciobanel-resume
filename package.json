@@ -20,7 +20,7 @@
     "react-dom": "^19.2.3",
     "react-icons": "^5.5.0",
     "set-value": "^4.1.0",
-    "styled-components": "^6.3.6",
+    "styled-components": "^6.3.8",
     "web-vitals": "^5.1.0",
     "webpack-dev-server": "^5.2.3"
   },
