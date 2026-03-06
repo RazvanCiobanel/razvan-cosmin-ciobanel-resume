@@ -58,7 +58,7 @@
     "jake": "^11.9.5",
     "portfinder": "^1.0.38",
     "postcss": "^8.5.8",
-    "svgo": "^4.0.0",
+    "svgo": "^4.0.1",
     "vite": "^7.3.1",
     "workbox-build": "^7.4.0",
     "workbox-webpack-plugin": "^7.4.0"
