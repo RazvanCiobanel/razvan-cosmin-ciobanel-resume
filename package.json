@@ -60,7 +60,7 @@
     "postcss": "^8.5.8",
     "svgo": "^4.0.1",
     "vite": "^7.3.1",
-    "workbox-build": "^7.4.0",
-    "workbox-webpack-plugin": "^7.4.0"
+    "workbox-build": "^7.0.0",
+    "workbox-webpack-plugin": "^7.0.0"
   }
 }
