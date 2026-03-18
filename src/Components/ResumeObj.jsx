@@ -21,7 +21,7 @@ const ResumeObj = () => {
           Highly motivated engineer, I completed the{" "}
           <cite>Front End Developer Course</cite> at
           Codecool Romania. I am eager to improve my front
-          end developer skills in designing, building and
+          end developer skills in designing, built ing and
           testing user-oriented and responsive web
           applications.
         </p>
@@ -36,16 +36,34 @@ const ResumeObj = () => {
         <ul className="skills">
           <p>Skills gained:</p>
           <li>
-            Socializing, because it is first time when I
-            work with so many people around me;
+            Conduct live roulette games according to company
+            procedures, gaming standards, and compliance
+            requirements;
           </li>
           <li>
-            Attention to detail, because I must be
-            immaculate before the shift starts;
+            Ensure smooth table functionality and
+            uninterrupted game flow;
           </li>
           <li>
-            Distributed attention, to synchronize with
-            cameras and to talk with the players;
+            Respond promptly to table calls and operational
+            incidents to minimize downtime;
+          </li>
+          <li>
+            Maintain up-to-date knowledge of procedures,
+            game rules, and promotions;
+          </li>
+          <li>
+            Work closely with supervisors and operational
+            teams to ensure studio efficiency;
+          </li>
+          <li>
+            Demonstrate professionalism, accuracy, and
+            composure in a high-pressure live environment;
+          </li>
+          <li>
+            Support colleagues and contribute to a
+            cooperative and performance-oriented team
+            culture.
           </li>
         </ul>
         <p className="period">May 2015 - June 2023</p>
@@ -56,39 +74,39 @@ const ResumeObj = () => {
         <ul className="skills">
           <p>Skills gained:</p>
           <li>
-            Good team player with great communication skills
-            - as a third officer I worked in multinational
-            teams and for the time of the contract I was
-            living 24 hours with same 22 people;
+            Managed maintenance and operational readiness of
+            life-saving appliances and fire-fighting
+            equipment;
           </li>
           <li>
-            I am adaptable and I integrate well into any
-            team - every time I was going at sea I had other
-            co-workers from different nationalities and with
-            different customs;
+            Ensured safety of navigation during navigational
+            watch in compliance with procedures and maritime
+            regulations;
           </li>
           <li>
-            Experience in organizing a team - during my
-            shifts I was team leader and in charge with
-            supervising cargo operations;
+            Performed GMDSS watchkeeping and maintained
+            accurate operational communication;
           </li>
           <li>
-            Problem-solving and decision-making skills - I
-            had to make decisions in a very dynamic
-            environment to avoid collisions and close
-            quarter situations with other ships;
+            Assisted the Captain with pre-arrival and
+            arrival documentation and reporting;
           </li>
           <li>
-            Professionalism and working under pressure - I
-            had to maintain operational all the time and in
-            good working condition life saving appliances
-            and fire fighting equipment
+            Reported incidents, observations, and
+            equipment-related issues clearly and accurately;
           </li>
           <li>
-            Proficiency with Microsoft Office and ability to
-            meet deadlines, I was assisting the captain to
-            prepare pre-arrival and arrival documents for
-            all ports.
+            Supported safe and efficient vessel operations
+            in a highly regulated environment;
+          </li>
+          <li>
+            Worked collaboratively with senior officers and
+            crew, maintaining discipline, communication, and
+            procedural compliance;
+          </li>
+          <li>
+            Demonstrated leadership, responsibility, and
+            effective decision-making under pressure.
           </li>
         </ul>
       </div>
@@ -103,13 +121,13 @@ const ResumeObj = () => {
         <ul className="skills">
           <li>
             During this course I learned and worked with
-            HML5, CSS3, JavaScript, Bootstrap and DOM
+            HTML5, CSS3, JavaScript, Bootstrap and DOM
             Manipulation;
           </li>
           <li>
             I designed web applications with JavaScript
             Framework, React JS. For styling I used CSS3
-            together with React-Bootstrat and Styled
+            together with React-Bootstrap and Styled
             Components packages;
           </li>
           <li>
@@ -180,7 +198,7 @@ const ResumeObj = () => {
             This repository simulates an e-commerce
             platform.You can add products to the shopping
             cart, increase and decrease the amount of
-            products in the shopping cart, romove products
+            products in the shopping cart, remove products
             from the shopping cart, and change currency.
           </p>
           <p>
@@ -188,7 +206,7 @@ const ResumeObj = () => {
             the backend is not done by me.
           </p>
           <p>
-            The frontend is done by me, in ReactJs, with
+            The frontend is done by me, in React Js, with
             class components. To manage the global state of
             application I used redux. Other libraries used
             for this repository:@apollo/client; dompurify;
@@ -217,7 +235,7 @@ const ResumeObj = () => {
             >
               ZTM Academy
             </MyLink>
-            . This project is a backend written in NodeJs
+            . This project is a backend written in Node.Js
             which can read Spotify data from a CSV file and
             perform the following tasks: can identify the
             number of songs in the file and can identify the
@@ -232,7 +250,7 @@ const ResumeObj = () => {
       </div>
       <div className="projects">
         <h2 className="projects__header">
-          Digital skilss :
+          Digital skills :
         </h2>
         HTML, JavaScript and CSS | NodeJS, ExpressJS,
         ReactJS | Bootsrap | React Hooks, React Router &
@@ -241,6 +259,17 @@ const ResumeObj = () => {
         | GIT Hub | Rest API | GraphQL APIs | Apollo Client
         | Visual Studio - Visual Studio Code |
         Styled-Components | GIT Hub Pages | Redux Toolkit
+      </div>
+      <div className="projects">
+        <h2 className="projects__header">Skills :</h2>
+        Live Casino Operations | Roulette Game and Blackjack
+        Game Procedures| Incident Reporting and Resolution |
+        Studio and Table Support | Compliance and Standards
+        | Team Coordination | Communication Skills |
+        Operational Discipline | Microsoft Office | PC
+        Skills | Working Under Pressure | English
+        Communication B1 level| Documentation and Reporting
+        | Safety and Risk Awareness
       </div>
     </div>
   );

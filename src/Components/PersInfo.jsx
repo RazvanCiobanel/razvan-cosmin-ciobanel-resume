@@ -89,15 +89,23 @@ const PersInfo = () => {
       <div className="container">
         <h2>Self definition</h2>
         <p>
-          I am willing to learn new front end and back end
-          technologies. I have a good understanding of
-          responsive web design and SEO practices. I am a
-          consistent person and I like to achieve my goals.
+          Experienced Live Casino professional with over 2
+          years of experience as an Online Roulette Dealer
+          and 8 years of maritime leadership experience as a
+          Third Officer in the merchant navy. Strong
+          background in operational control, compliance,
+          incident reporting, safety procedures, and team
+          coordination. Skilled at maintaining high
+          standards in fast-paced environments, resolving
+          issues quickly, and supporting efficient daily
+          operations. Known for discipline, professionalism,
+          communication skills, and the ability to perform
+          effectively under pressure.
         </p>
       </div>
       <div className="container">
         <h2>Spoken languages</h2>
-        <p className="text">English - Advanced level</p>
+        <p className="text">English - B1 level</p>
       </div>
     </div>
   );
