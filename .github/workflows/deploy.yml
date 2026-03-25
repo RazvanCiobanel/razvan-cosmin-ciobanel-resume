@@ -65,7 +65,7 @@ jobs:
         if: github.actor != 'dependabot[bot]' &&
           !contains(github.event.head_commit.message, 'Merge pull request') &&
           steps.nodecheck.outcome == 'success'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
