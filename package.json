@@ -55,7 +55,7 @@
     "async": "^3.2.6",
     "eslint-config-react-app": "^7.0.1",
     "gh-pages": "^6.3.0",
-    "jake": "^11.9.5",
+    "jake": "^12.9.7",
     "portfinder": "^1.0.38",
     "postcss": "^8.5.9",
     "svgo": "^4.0.1",
