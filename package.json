@@ -62,5 +62,8 @@
     "vite": "^8.0.14",
     "workbox-build": "^7.0.0",
     "workbox-webpack-plugin": "^7.4.1"
+  },
+  "allowScripts": {
+    "core-js-pure": false
   }
 }
